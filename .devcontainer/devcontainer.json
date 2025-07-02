@@ -1,0 +1,12 @@
+{
+  "name": "classroom-bot",
+  "build": {
+    "dockerfile": "Dockerfile"
+  },
+  "forwardPorts": [8501],
+  "postCreateCommand": "pip install -r requirements.txt",
+  "settings": {
+    "terminal.integrated.defaultProfile.linux": "bash"
+  },
+  "remoteUser": "root"
+}
